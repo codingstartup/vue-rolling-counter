@@ -1,0 +1,9 @@
+<div id="app">
+  <button @click="subtract" :disabled="isAnimating">
+    <i class="fas fa-minus"></i>
+  </button>
+  <span :class="{before: isBefore, after: isAfter}" :data-before="countBefore" :data-after="countAfter">{{ count }}</span>
+  <button @click="add" :disabled="isAnimating">
+    <i class="fas fa-plus"></i>
+  </button>
+</div>

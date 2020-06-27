@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Rolling Counter 滾動計數器</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <button @click="subtract" :disabled="isAnimating">
+    <i class="fas fa-minus"></i>
+  </button>
+  <span :class="{before: isBefore, after: isAfter}" :data-before="countBefore" :data-after="countAfter">{{ count }}</span>
+  <button @click="add" :disabled="isAnimating">
+    <i class="fas fa-plus"></i>
+  </button>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
